@@ -1,0 +1,261 @@
+body {
+    background:  #F42D2D
+}
+h4 {
+    margin:0;
+    padding:0;
+}
+#Title {
+   
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    top: 57px;
+    
+    font-family: '8-bit HUD';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4vw;
+    line-height: 54px;
+    margin-bottom: 50px;
+    color: #FFFFFF;
+    
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);  
+}
+/* Cabinent container*/
+#cabinet {
+    background: #2D2626;
+    position:relative;
+    padding:15px;
+    border: 4px solid #DDC8C8;
+    width:23vw;
+    height:fit-content; 
+    float:left;
+    margin-left:50px;
+    padding: 5px 10px 20px;
+}
+.subtitle {
+    
+    font-family: 'Pixeloid Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 3.2vh;
+    line-height: 30px;
+    align-items: center;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #FFE600;  
+    text-decoration-thickness: 2px;
+    margin-bottom: 5px;
+    
+
+    background: linear-gradient(180deg, #FF0000 0.52%, #FFE600 99.48%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.btn_drop_down {
+    width: fit-content;
+    display:inline-flexbox;
+    border-radius: 5px;
+    height: fit-content;
+    background: #504D4D;
+}
+.btn_drop_down img {
+    height:15px;
+}
+.menu_btn {
+    background: #504D4D;
+    border-radius: 8px;
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+    
+    font-family: 'Pixeloid Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5vw;
+    line-height: 20px;
+    display:inline-flex;
+    align-items: center;
+    color: #FFFFFF;
+    padding: 0 0 0 10px;
+    cursor: pointer;
+    padding-top: 20x;
+
+}
+.menu_btn_text {
+    width: 80%;
+    font-family: 'Pixeloid Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.3vw;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+.menu_btn img {
+    width: 30px;
+    height: fit-content; 
+    align-self:center;
+    padding: 0 0 8px 0;
+}
+.menu_btn:hover {
+    background-color: #8F8686;
+    cursor: pointer;
+    box-shadow: 0  2px #666;
+}
+.menu_btn:active {
+    background-color: #736A6A;
+    box-shadow: 0 2px #666;
+    transform: translateY(4px);
+}
+/* Calculator*/
+
+#calculator {
+    position:absolute;
+    width: 40%;
+    height: fit-content;
+    left: 370px;
+    top: 122px;
+    
+
+    background-color: #413636 ;
+    border-radius: 30px;
+    color:white;
+    font-family: 'Pixeloid Sans';
+    font-style: normal;
+    
+    
+}
+
+#display {
+    display:relative;
+    height:97px;
+    margin: 16px 20px;
+    text-align: right;
+    line-height: 90px;
+    background: #194E8F;
+    border-radius: 16px;
+    overflow: hidden;
+}
+#numbers {
+    display:absolute;
+    top: 50%;
+    left: 50%;
+    width:90%;
+    font-size: 3.5vw;
+    font-weight: 700;
+    color: #A3BEDF;
+}
+#calculatorBar {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: mixmax(1fr, auto);
+    gap: 0.3em 0;
+    width: 86%;
+    margin-left:18px;
+    padding: 0;
+    background: #504D4D;
+    border: 3px solid rgba(255, 255, 255, 0.14);
+    border-radius: 15px;
+    box-shadow: 0 2px #666;
+}
+.calBtn1 {
+    display:flex;
+    justify-content:center;
+    width:100%;
+    height:100%;
+    background-color: transparent;
+    color:white;
+    padding: 8px 0;
+    border: none;
+    text-align: center;
+    flex-grow: 1;
+    flex-basis: 0;
+    overflow:hidden;
+    font-size: 0.8em;
+    font-weight: 600;
+}
+#mc {
+    border-radius: 12px 0 0 12px;
+}
+#ms {
+    border-radius: 0 12px 12px 0;
+}
+.calBtn1:focus {
+    outline:0;
+}
+.calBtn1:hover {
+    background-color: #8F8686;
+    cursor: pointer;
+  }
+.calBtn1:active {
+    background-color: #493C3C;
+    box-shadow: 0 2px #666;
+}
+#buttons {
+    display:grid;
+    width: 87%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: minmax(1fr, auto);
+    margin: 10px 15px 20px;
+    gap: 0.3em 0.6em;
+
+}
+.calBtn2 {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 100%;
+
+    background: #504D4D;
+    border: 3px solid rgba(255, 255, 255, 0.14);
+    border-radius: 17px;
+    font-size: 0.8em;
+    font-weight: 600;
+    box-shadow: 0 2px #666;
+}
+.calBtn2:hover{
+background-color: #8F8686;
+cursor:pointer;
+}
+.calBtn2:active {
+    background-color: #493C3C;
+    box-shadow: 0 2px #666;
+    transform: translateY(4px);
+}
+
+/* Individual button Customisations*/
+#equal {
+    background: #7C2121;
+    border: 3px solid rgba(255, 255, 255, 0.14);
+    font-size: 1.5em;
+}
+#onex {
+    font-size:0.7em;
+}
+#xroot2 {
+    font-size:0.7em;
+}
+#div {
+    font-size: 1.1em;
+}
+#add {
+    font-size: 1.2em;
+}
+#sub {
+    font-size: 1.2em;
+}
+#period {
+    font-size: 1.4em;
+}
+#equal:hover {
+    background-color: #9D2626;
+}
+#equal:active {
+background-color: #5E1919;
+}
